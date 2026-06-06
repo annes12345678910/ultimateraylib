@@ -13,3 +13,4 @@ ultimateraylib/*.pdb
 ultimateraylib/*.so
 ultimateraylib/*.dll
 ultimateraylib/*.dylib
+.DS_Store
