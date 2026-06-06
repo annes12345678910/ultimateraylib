@@ -1,0 +1,15 @@
+raylib.h
+raymath.h
+raygui.h
+libraylib.a
+token.txt
+what.s
+dist/*
+ultimateraylib.egg-info/*
+ultimateraylib/__pycache__/*
+ultimateraylib/libAppleSillicon.dylib.dSYM/*
+ultimateraylib/*.lib
+ultimateraylib/*.pdb
+ultimateraylib/*.so
+ultimateraylib/*.dll
+ultimateraylib/*.dylib

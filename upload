@@ -1,0 +1,10 @@
+#!/bin/bash
+
+./bob
+rm -rf dist
+
+python -m build
+
+python -m twine upload dist/*
+sleep 2
+pip install --upgrade ultimateraylib
