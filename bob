@@ -22,12 +22,12 @@ fi
 echo WINDOWS
 #/opt/homebrew/Cellar/mingw-w64/13.0.0_2/toolchain-x86_64/bin/x86_64-w64-mingw32-gcc /Users/annes/Documents/some_games/ultimateraylib/lib.c -shared /Users/annes/Downloads/raylib-5.5_win64_mingw-w64/lib/raylib.dll 
 #    -o ultimateraylib/libwin86_64.dll -I. -Wall -Wextra -g -Wunused-parameter
-zig cc -target x86_64-windows-gnu lib.c \
-    -D_WIN32 -DBUILD_LIBTYPE_SHARED -nostartfiles \
-    -g \
-    -Wl,--export-all-symbols \
-    -Lultimateraylib -lraylib \
-    -shared -o ultimateraylib/libwin86_64.dll
+#zig cc -target x86_64-windows-gnu lib.c \
+#    -D_WIN32 -DBUILD_LIBTYPE_SHARED -nostartfiles \
+#    -g \
+#    -Wl,--export-all-symbols \
+#    -Lultimateraylib -lraylib \
+#    -shared -o ultimateraylib/libwin86_64.dll
 
 #echo LINUX
 #zig cc -target x86_64-linux-gnu lib.c libraylib.so.5.5.0 -shared -o ultimateraylib/liblinux86_64.so

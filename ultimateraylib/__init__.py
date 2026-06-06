@@ -19,7 +19,7 @@ from .collision import *
 from .image import *
 from .text import *
 
-__version__ = "0.3.1"
+__version__ = "0.3.2"
 __copyright__ = "© Annes Widow - 2025-2026"
 
 # im afraid there will be a segfault
