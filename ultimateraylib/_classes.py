@@ -505,7 +505,7 @@ class ModelAnimation(Structure):
     ]
 
     boneCount: int
-    frameCount: int
+    keyframeCount: int
     bones: list[BoneInfo]
     framePoses: list[Transform]
     name: bytes

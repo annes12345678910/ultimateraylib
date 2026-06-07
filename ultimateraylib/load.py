@@ -391,12 +391,6 @@ lib.LoadModelAnimations.argtypes = [c_char_p, POINTER(c_int)]
 lib.UpdateModelAnimation.restype = None
 lib.UpdateModelAnimation.argtypes = [POINTER(Model), POINTER(ModelAnimation), c_int]
 
-lib.UpdateModelAnimationBones.restype = None
-lib.UpdateModelAnimationBones.argtypes = [POINTER(Model), POINTER(ModelAnimation), c_int]
-
-lib.UnloadModelAnimation.restype = None
-lib.UnloadModelAnimation.argtypes = [POINTER(ModelAnimation)]
-
 lib.UnloadModelAnimations.restype = None
 lib.UnloadModelAnimations.argtypes = [POINTER(ModelAnimation), c_int]
 
@@ -418,11 +412,6 @@ def load_model_animations(file: str):
 def update_model_animation(model:Model, anim: ModelAnimation, frame: int):
     lib.UpdateModelAnimation(byref(model), byref(anim), frame)
 
-def update_model_animation_bones(model, anim, frame):
-    lib.UpdateModelAnimationBones(byref(model), byref(anim), frame)
-
-def unload_model_animation(anim):
-    lib.UnloadModelAnimation(byref(anim))
 
 def unload_model_animations(anims, count):
     lib.UnloadModelAnimations(anims, count)

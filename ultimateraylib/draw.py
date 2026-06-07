@@ -479,14 +479,6 @@ makeconnect("DrawModelWiresEx", [Model, Vector3, Vector3, c_float, Vector3, Colo
 def draw_model_wires_ex(model: Model, position: Vector3, rotation_axis: Vector3, rotation_angle: float, scale: Vector3, tint: Color):
     lib.DrawModelWiresEx(model, position, rotation_axis, rotation_angle, scale, tint)
 
-makeconnect("DrawModelPoints", [Model, Vector3, c_float, Color])
-def draw_model_points(model: Model, position: Vector3, scale: float, tint: Color):
-    lib.DrawModelPoints(model, position, scale, tint)
-
-makeconnect("DrawModelPointsEx", [Model, Vector3, Vector3, c_float, Vector3, Color])
-def draw_model_points_ex(model: Model, position: Vector3, rotation_axis: Vector3, rotation_angle: float, scale: Vector3, tint: Color):
-    lib.DrawModelPointsEx(model, position, rotation_axis, rotation_angle, scale, tint)
-
 makeconnect("DrawBoundingBox", [BoundingBox, Color])
 def draw_bounding_box(box: BoundingBox, color: Color):
     lib.DrawBoundingBox(box, color)
